@@ -8,8 +8,19 @@ function Find-FirstDuplicateCharacter {
     The function handles special characters and 
 
     .EXAMPLE
-    PS> extension -name "File"
-    File.txt
+    Find-FirstDuplicateCharacter -Foo "abc123abc123"
+    Returns the character "a"
+
+    .EXAMPLE
+    @("aabbcc", "112233")| Find-FirstDuplicateCharacter
+    Returns an array of characters "a" and "1"
+
+    .EXAMPLE
+    $Item = [pscustomobject]@{
+        Foo = "baseball"
+    }
+    $Item | Find-FirstDuplicateCharacter
+    Returns the character "b"
 #>
 [OutputType([char])]
 [cmdletbinding()]
