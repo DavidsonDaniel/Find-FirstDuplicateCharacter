@@ -5,7 +5,7 @@ function Find-FirstDuplicateCharacter {
 
     .DESCRIPTION
     Takes the provided string and returns the first duplicate character within that string
-    The function handles special characters and 
+    The function handles all characters
 
     .EXAMPLE
     Find-FirstDuplicateCharacter -Foo "abc123abc123"
